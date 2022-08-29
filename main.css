@@ -1063,7 +1063,6 @@ h1 span {
 .top__sellers-section .small__block {
     width: 437px;
     height: 123px;
-    backdrop-filter: blur(75.8157px);
     display: flex;
     align-items: center;
     padding: 7px 17px 0px 30px;
@@ -1184,6 +1183,7 @@ h1 span {
         -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     -webkit-mask-composite: exclude;
+    z-index: 10000;
 }
 
 .top__sellers-section .small__block .user__profit.red {
