@@ -7,39 +7,39 @@
 
 @font-face {
     font-family: 'Orbitron';
-    src: url('../fonts/orbitron-v25-latin-600.ttf');
+    src: url('fonts/orbitron-v25-latin-600.ttf');
 }
 
 @font-face {
     font-family: 'Spartan';
-    src: url('../fonts/spartan.ttf');
+    src: url('fonts/spartan.ttf');
 }
 
 @font-face {
     font-family: 'Alethia Next';
-    src: url('../fonts/alethianext-light.otf');
+    src: url('fonts/alethianext-light.otf');
 }
 
 
 @font-face {
     font-family: 'Inter800';
-    src: url('../fonts/Inter-Bold.ttf');
+    src: url('fonts/Inter-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Inter400';
-    src: url('../fonts/Inter-Regular.ttf');
+    src: url('fonts/Inter-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Inter500';
-    src: url('../fonts/Inter-Medium.ttf');
+    src: url('fonts/Inter-Medium.ttf');
 }
 
 
 
 body {
-    background-image: url('../images/body_bg.png');
+    background-image: url('images/body_bg.png');
     background-size: cover;
     color: white;
 }
