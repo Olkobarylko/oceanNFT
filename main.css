@@ -1153,32 +1153,19 @@ h1 span {
     top: 51px;
     right: 20px
 }
-
-.top__sellers-section .small__block .user__profit::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 17px;
-    border: 1px solid rgba(255, 255, 255, 0);
-    background: -webkit-linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
-    -webkit-mask:
-        -webkit-linear-gradient(#fff 0 0) padding-box,
-        -webkit-linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    -webkit-mask-composite: exclude;
-    z-index: 10000;
+.top__sellers-section .small__block .user__profit {
+    background-image: url('../oceanNFT/images/top-sellers-green.png');
+    background-size: cover;
 }
 
 .top__sellers-section .small__block .user__profit.red {
-    background: -webkit-linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
+    background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
     color: #FF0000;
 }
 
-.top__sellers-section .small__block .user__profit.red::before {
-    background: -webkit-linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%) border-box;
+.top__sellers-section .small__block .user__profit.red {
+    background-image: url('../oceanNFT/images/top-sellers-red.png');
+    background-size: cover;
 }
 
 .top__sellers-section .explore__btn {
