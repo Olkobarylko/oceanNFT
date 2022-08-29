@@ -323,7 +323,7 @@ h1 span {
 }
 
 .front__blur-left h5 {
-    font-family: 'Rajdhani' , sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17.6873px;
@@ -391,7 +391,7 @@ h1 span {
 }
 
 .front__nft-info span {
-    font-family: 'Rajdhani' , sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 11.0546px;
@@ -409,7 +409,7 @@ h1 span {
 
 .front__blur-right h6 {
     margin-left: -7px;
-    font-family: 'Rajdhani' , sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 11.0546px;
@@ -425,7 +425,7 @@ h1 span {
     display: block;
     margin-top: 5px;
     margin-left: -7px;
-    font-family: 'Rajdhani' , sans-serif;
+    font-family: 'Rajdhani', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17.6873px;
@@ -1081,10 +1081,10 @@ h1 span {
     border: 3px solid transparent;
     background: -webkit-linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%) border-box;
     -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
+    -webkit-linear-gradient(#fff 0 0) padding-box,
+    -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
+    -webkit-mask-composite: exclude;
 }
 
 .top__sellers-section .small__block.last {
@@ -1178,21 +1178,21 @@ h1 span {
     bottom: 0;
     border-radius: 17px;
     border: 1px solid transparent;
-    background: linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
+    background: -webkit-linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
     -webkit-mask:
-        linear-gradient(#fff 0 0) padding-box,
-        linear-gradient(#fff 0 0);
+        -webkit-linear-gradient(#fff 0 0) padding-box,
+        -webkit-linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
-    mask-composite: exclude;
+    -webkit-mask-composite: exclude;
 }
 
 .top__sellers-section .small__block .user__profit.red {
-    background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
     color: #FF0000;
 }
 
 .top__sellers-section .small__block .user__profit.red::before {
-    background: linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%) border-box;
+    background: -webkit-linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%) border-box;
 }
 
 .top__sellers-section .explore__btn {
