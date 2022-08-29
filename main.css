@@ -1244,7 +1244,7 @@ h1 span {
     box-sizing: content-box;
     border-width: 3px;
     border-style: solid;
-    border-image: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image: -webkit-linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
     border-image-slice: 1;
     padding-bottom: 35px;
 }
