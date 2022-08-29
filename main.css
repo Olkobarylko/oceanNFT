@@ -323,7 +323,7 @@ h1 span {
 }
 
 .front__blur-left h5 {
-    font-family: 'Rajdhani';
+    font-family: 'Rajdhani' , sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 17.6873px;
