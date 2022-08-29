@@ -12,16 +12,16 @@ let media500 = window.matchMedia('(max-width: 500px)');
 
 
 if (media500.matches) {
-    document.querySelector(".front__left-block-main-img").setAttribute("src", "images/frontImg-mobile.png");
-    document.querySelector(".subscribe__image-js").setAttribute("src", "images/subscripte-mobile.png");
+    document.querySelector(".front__left-block-main-img").setAttribute("src", "../oceanNFT/images/frontImg-mobile.png");
+    document.querySelector(".subscribe__image-js").setAttribute("src", "../oceanNFT/images/subscripte-mobile.png");
     document.querySelector(".explore__collections-first-section").addEventListener('click', (e) => {
         if(e.target.contains('.small-block')){
             e.target.classList.add('active')
         }
     })
 } else {
-    document.querySelector(".front__left-block-main-img").setAttribute("src", "images/frontImg.png");
-    document.querySelector(".subscribe__image-js").setAttribute("src", "images/subscripte.png");
+    document.querySelector(".front__left-block-main-img").setAttribute("src", "../oceanNFT/images/frontImg.png");
+    document.querySelector(".subscribe__image-js").setAttribute("src", "../oceanNFT/images/subscripte.png");
 }
 
 const accClick = document.querySelector('.accordion__container');
