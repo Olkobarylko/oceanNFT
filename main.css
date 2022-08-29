@@ -1,0 +1,2841 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/orbitron-v25-latin-600.ttf');
+}
+
+@font-face {
+    font-family: 'Spartan';
+    src: url('fonts/spartan.ttf');
+}
+
+@font-face {
+    font-family: 'Alethia Next';
+    src: url('fonts/alethianext-light.otf');
+}
+
+
+@font-face {
+    font-family: 'Inter800';
+    src: url('fonts/Inter-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Inter400';
+    src: url('fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter500';
+    src: url('fonts/Inter-Medium.ttf');
+}
+
+
+
+body {
+    background-image: url('images/body_bg.png');
+    background-size: cover;
+    color: white;
+}
+
+header {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1394px;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.header__logo,
+.footer__logo {
+    margin-top: 45px;
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo h3,
+.footer__logo h3 {
+    margin-top: 4px;
+    margin-left: -1px;
+}
+
+nav {
+    width: 500px;
+    margin-left: 227px;
+}
+
+nav ul {
+    margin-top: 53px;
+    font-size: 19px;
+    list-style: none;
+    display: flex;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    text-align: left;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header__imgs {
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 415px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.header__menu-mobile {
+    display: none;
+    z-index: 950;
+}
+
+.header__menu-mobile-btn {
+    display: none;
+}
+
+main {
+    margin-top: 108px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* front section */
+
+.front__section {
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.front__container {
+    width: 865px;
+}
+
+h1 {
+    font-family: 'Spartan';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 66.33px;
+    line-height: 91px;
+    color: #FFFFFF;
+    margin-top: 6px;
+    margin-left: 23px;
+}
+
+.br-mobile {
+    display: none;
+}
+
+h1 span {
+    margin-left: 1px;
+    background: linear-gradient(to right, rgba(255, 86, 246, 1), rgba(67, 165, 227, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.front__subtitle {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 26.531px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-left: 23px;
+    margin-top: 20px;
+}
+
+.front__flex {
+    display: flex;
+}
+
+.front__button {
+    margin-top: 39px;
+    margin-left: 19px;
+    position: relative;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+}
+
+.front__button svg {
+    filter: drop-shadow(0px 4.42184px 107.23px rgba(255, 86, 246, 0.51));
+}
+
+.front__button-conteiner-desktop {
+    visibility: visible;
+}
+
+.front__button-conteiner-mobile {
+    height: 0px;
+    visibility: hidden;
+}
+
+.front__button-text {
+    position: absolute;
+    top: 24px;
+    left: 72px;
+    font-size: 19.8983px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.front__button-text img {
+    margin-left: 7px;
+    width: 51.96px;
+    height: 15.48px;
+}
+
+.round {
+    stroke-linejoin: round;
+}
+
+.front__section-gradient-text {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 62px;
+    margin-left: -8px;
+    font-size: 19.8983px;
+    line-height: 25px;
+    background: linear-gradient(to right, #42A6E3, #FF56F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.front__wave {
+    margin-top: 30px;
+    margin-left: 290px;
+}
+
+.front__wave img {
+    width: 117px;
+    height: 23px;
+}
+
+.front__statist {
+    display: flex;
+}
+
+.statist__block {
+    margin-top: -19px;
+    margin-left: 24px;
+    position: relative;
+}
+
+.statist__block::before {
+    position: absolute;
+    top: 9px;
+    left: 131px;
+    content: '';
+    width: 2px;
+    height: 63px;
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.statist__block-second-before {
+    margin-left: 56px;
+}
+
+.statist__block-third-before {
+    margin-left: 68px;
+}
+
+.statist__block-second-before::before {
+    left: 127px;
+}
+
+.statist__block-third-before::before {
+    content: none;
+}
+
+.statist__block div {
+    font-family: 'Aldrich', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39.7965px;
+    line-height: 53px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.221092px;
+    color: #FFFFFF;
+}
+
+.statist__block p {
+    margin-top: -3px;
+    font-family: 'Alethia Next';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.221092px;
+    color: #FFFFFF;
+}
+
+.front__left-block {
+    position: relative;
+    margin-right: 44px;
+}
+
+.front__img-block img {
+    margin-top: 21px;
+    margin-right: 68px;
+    position: relative;
+    border-radius: 17.6873px;
+    width: 402px;
+    height: 477px;
+    filter: drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4.42184px 4.42184px rgba(0, 0, 0, 0.25));
+}
+
+.front__left-blur-block {
+    position: absolute;
+    bottom: -19px;
+    left: 156px;
+    width: 336.06px;
+    height: 181.3px;
+    background-image: url('images/frontBlur.png');
+    display: flex;
+    justify-content: space-between;
+}
+
+.front__blur-left {
+    padding-top: 30px;
+    padding-left: 24px;
+    letter-spacing: 0.1px;
+}
+
+.front__blur-left h5 {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17.6873px;
+    line-height: 35px;
+    color: white;
+}
+
+.front__user-info {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+    margin-left: -1px;
+}
+
+.front__user-info img {
+    margin: 0;
+    padding: 0;
+    filter: none;
+}
+
+.front__user-info p {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15.4764px;
+    line-height: 35px;
+    color: white;
+    margin-left: 4px;
+}
+
+.front__blur-res-price-text {
+    margin-top: 8px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.0546px;
+    line-height: 35px;
+    color: white;
+}
+
+.front__nft-info {
+    margin-top: -12px;
+    display: flex;
+    align-items: center;
+}
+
+.front__nft-info img {
+    filter: none;
+    padding: 0;
+    margin: 0;
+    width: 11px;
+    height: 18px;
+}
+
+
+
+.front__nft-info p {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.71776px;
+    line-height: 12px;
+    color: white;
+    margin-left: 5px;
+}
+
+.front__nft-info span {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11.0546px;
+    line-height: 35px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
+.front__blur-right {
+    width: 125px;
+    margin-top: 40px;
+}
+
+.front__blur-right h6 {
+    margin-left: -7px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.0546px;
+    color: #FFFFFF;
+}
+
+.front__blur-statist {
+    width: 94px;
+    display: flex;
+}
+
+.front__blur-statist div span {
+    display: block;
+    margin-top: 5px;
+    margin-left: -7px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6873px;
+    color: #FFFFFF;
+}
+
+.front__blur-statist div p {
+    margin-left: -9px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.0546px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+.front__blur-right a,
+.topnft__info-button,
+.exp__col-2-block-button,
+.subscribe__button {
+    margin-top: 28px;
+    margin-left: -16px;
+    padding: 9px 0px 0px 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 122px;
+    height: 41px;
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(212.248px);
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17.6873px;
+    line-height: 23px;
+    background:
+        linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%) padding-box,
+        linear-gradient(to right, #3C79D4, #FFA6FA) border-box;
+    border-radius: 3px;
+    border: 2.21092px solid transparent;
+}
+
+.front__blur-right a img {
+    padding: 0;
+    margin: 0;
+    margin-right: 8px;
+    margin-bottom: 2px;
+    width: 24.32px;
+    height: 9.22px;
+}
+
+.front__bottom-block {
+    margin-top: 119px;
+    padding-left: 27px;
+    padding-right: 29px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ethereum__logo {
+    margin-top: 8px;
+    margin-left: 2px;
+}
+
+.blockchain__logo {
+    margin-top: 5px;
+}
+
+.bitmex__logo {
+    margin-top: 21px;
+}
+
+.topnft__section {
+    padding-left: 2px;
+    margin-top: 213px;
+    width: 1384.04px;
+}
+
+.topnft__titles,
+.explore__collections-second-titles {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26.531px;
+    line-height: 33px;
+    padding-right: 11px;
+}
+
+
+.topnft__titles p:last-child span,
+.explore__collections-second-section p:last-child span {
+    margin-right: 67px;
+    position: relative;
+}
+
+.topnft__titles p:last-child span::before,
+.explore__collections-second-section p:last-child span::before {
+    content: '';
+    position: absolute;
+    background-image: url('images/arrowRight.png');
+    top: 3px;
+    left: 139px;
+    width: 51.96px;
+    height: 27px;
+}
+
+
+.nfttop__container {
+    display: flex;
+    gap: 35px;
+}
+
+.nfttob__mini-block {
+    margin-top: 46px;
+    width: 437.76px;
+}
+
+.nfttob__mini-block img {
+    display: flex;
+    flex-direction: column;
+}
+
+.topnft__info-block {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    backdrop-filter: blur(5px);
+    height: 230px;
+    box-sizing: content-box;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+}
+
+.topnft__info-block {
+    display: flex;
+}
+
+.topnft__info-block h5 {
+    padding: 41px 0px 0px 29px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23.0401px;
+    color: #FFFFFF;
+}
+
+.topnft__user-info {
+    display: flex;
+    align-items: center;
+}
+
+.topnft__user-img {
+    width: 38px;
+    height: 38px;
+    margin-top: 11px;
+    margin-left: 27px;
+}
+
+.topnft__user-info p {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20.1601px;
+}
+
+.topnft__done-img {
+    width: 15.84px;
+    height: 17.28px;
+    margin-top: 11px;
+    margin-left: 7px;
+}
+
+.topnft__info-block h6 {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4001px;
+    margin-top: 26px;
+    margin-left: 28px;
+}
+
+.topnft__eth-info {
+    margin-top: 10px;
+    margin-left: 21px;
+    display: flex;
+}
+
+.topnft__eth-info img {
+    width: 25.32px;
+    height: 25.32px;
+}
+
+.topnft__eth-info span {
+    margin-left: 3px;
+    margin-top: 4px;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.6587px;
+}
+
+.topnft__eth-info p {
+    margin-left: 8px;
+    margin-top: 4px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4001px;
+    opacity: 0.7;
+}
+
+.topnft__info-right-block p {
+    margin-left: 37px;
+    margin-top: 47px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.4001px;
+}
+
+.topnft__info-mini-block p,
+.topnft__info-mini-block-second p,
+.topnft__info-mini-block-third p {
+    margin-left: 34px;
+    margin-top: 0px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.4001px;
+}
+
+.topnft__info-mini-block span,
+.topnft__info-mini-block-second span,
+.topnft__info-mini-block-third span {
+    display: block;
+    margin-left: 36px;
+    margin-top: 6px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.0401px;
+}
+
+.topnft__info-mini-block-second span {
+    margin-left: 25px;
+}
+
+.topnft__info-mini-block-second p {
+    margin-left: 24px;
+}
+
+.topnft__info-mini-block-third span {
+    margin-left: 30px;
+}
+
+.topnft__info-mini-block-third p {
+    margin-bottom: 5px;
+    margin-left: 30px;
+}
+
+.topnft__info-button {
+    margin-top: 32px;
+    margin-left: 24px;
+    border-radius: 0px;
+    width: 160px;
+    height: 54px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23.0401px;
+    color: white;
+    padding-left: 13px;
+    padding-right: 11px;
+    padding-top: 13px;
+}
+
+.topnft__info-button img {
+    margin-top: 5px;
+    width: 31.68px;
+    height: 12.01px;
+}
+
+.topnft__info-right-block-second {
+    margin-left: 10px;
+}
+
+.topnft__info-right-block-third {
+    margin-left: 40px;
+}
+
+.swiper-button-next-block {
+    padding-right: 24px;
+}
+
+.swiper-button-next,
+.swiper-button-second,
+.swiper-button-third {
+    margin: 40px auto;
+    position: static;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    background-image: url('images/swiper_btn-bg.png');
+    background-size: cover;
+    width: 136px;
+    height: 38px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.swiper-button-next img {
+    margin-left: 9px;
+}
+
+.swiper-button-next::after {
+    content: none;
+}
+
+.explore__collections-first-section {
+    margin-top: 211px;
+    width: 1384px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore__collections-first-section h3 {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #FFFFFF;
+}
+
+.explore__collections-first-section .left__block {
+    width: 785px;
+}
+
+.explore__collections-first-section .blocks__wrapper {
+    margin-top: 44px;
+}
+
+.explore__collections-first-section .top,
+.bot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 37px;
+}
+
+.explore__collections-first-section .bot {
+    margin-top: 45px;
+}
+
+.explore__collections-first-section .small__block {
+    width: 374px;
+    height: 104px;
+    padding-top: 33px;
+    text-align: center;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    border: 3px solid;
+    border-image: linear-gradient(272.52deg, rgba(255, 166, 250, 0.3) 47.49%, rgba(60, 121, 213, 0.3) 98.81%);
+    border-image-slice: 1;
+}
+
+.explore__collections-first-section .bot .small__block {
+    padding-top: 30px;
+}
+
+.small__block {
+    transition: all 0.25s ease-in-out;
+}
+
+.explore__collections-first-section .small__block:hover {
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(212.248px);
+    border: 2.21px solid;
+    border-radius: 2.21092px;
+    border-image: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+    border-image-slice: 1;
+    color: white;
+}
+
+.explore__collections-first-section .right__block img {
+    display: block;
+    margin-right: 36px;
+    margin-top: -50px;
+}
+
+.explore__collections-first-section .view__all {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.explore__collections-first-section .view__all span {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.explore__collections-first-section .view__all img {
+    width: 52px;
+    height: 16px;
+    object-fit: cover;
+    margin-left: 15px;
+    margin-right: 4px;
+}
+
+.explore__collections-second-section {
+    width: 1384px;
+    margin-top: 160px;
+}
+
+.exp__col-2-container {
+    display: flex;
+    margin-top: 47px;
+    gap: 36px;
+}
+
+.exp__col-2-first-block,
+.exp__col-2-second-block,
+.exp__col-2-third-block {
+    position: relative;
+    width: 431px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) -1.52%, rgba(255, 255, 255, 0.024) 104.35%);
+    backdrop-filter: blur(5px);
+    box-sizing: content-box;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+    padding-bottom: 35px;
+}
+
+.exp__col-2-first-block img,
+.exp__col-2-second-block img,
+.exp__col-2-third-block img {
+    height: 205.62px;
+}
+
+.exp__col-2-first-block::before,
+.exp__col-2-second-block::before,
+.exp__col-2-third-block::before {
+    content: '';
+    position: absolute;
+    top: 181px;
+    left: 51%;
+    right: 59%;
+    transform: translate(-51%, -49%);
+    width: 162.5px;
+    height: 162.5px;
+    background-image: url('images/exp-col-2-first-user-img.png');
+}
+
+.exp__col-2-second-block::before {
+    background-image: url('images/exp-col-2-second-user-img.png');
+}
+
+.exp__col-2-third-block::before {
+    background-image: url('images/exp-col-2-third-user-img.png');
+}
+
+.exp__col-2-first-block h4,
+.exp__col-2-second-block h4,
+.exp__col-2-third-block h4 {
+    padding-left: 3px;
+    margin-top: 64px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24.3201px;
+    text-align: center;
+}
+
+.exp__col-2-block-url {
+    position: relative;
+    margin-top: 3px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.1601px;
+    color: #FFB1EE;
+    text-align: center;
+}
+
+.exp__col-2-block-url::before {
+    content: "";
+    position: absolute;
+    left: 268px;
+    top: 5px;
+    background-image: url('images/doneImg.png');
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+}
+
+.exp__col-2-block-stats {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 42px;
+    padding-top: 30px;
+    padding-right: 41px;
+}
+
+.exp__col-2-second-block .exp__col-2-block-stats {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.exp__col-2-third-block .exp__col-2-block-stats {
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.exp__col-2-block-stats-text span {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 31.6897px;
+    padding-left: 16px;
+}
+
+.exp__col-2-block-stats-text p {
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.8061px;
+    margin-top: -1px;
+}
+
+.exp__col-2-second-block .exp__col-2-block-stats-text p {
+    padding-left: 5px;
+}
+
+.exp__col-2-third-block .exp__col-2-block-stats-text p {
+    padding-left: 5px;
+}
+
+.exp__col-2-block-button {
+    display: block;
+    margin-top: 38px;
+    margin-left: 101px;
+    width: 240px;
+    height: 56px;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.8983px;
+    text-align: center;
+    padding-top: 13px;
+    padding-right: 9px;
+}
+
+.top__sellers-section {
+    margin-top: 163px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top__sellers-section h3 {
+    text-align: center;
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #FFFFFF;
+    margin-left: 9px;
+}
+
+.top__sellers-section h3 span {
+    color: #FF56F6;
+    position: relative;
+}
+
+.top__sellers-section .after__custom::after {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 7px;
+    background-image: url('images/Vector.png');
+    background-size: cover;
+    right: -17px;
+    z-index: 1000;
+    top: 17px;
+}
+
+.top__sellers-section>p {
+    width: 530px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 23px auto 0;
+    padding-left: 17px;
+    letter-spacing: -0.13px;
+}
+
+.top__sellers-section .blocks__wrapper {
+    width: 1381px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 58px;
+}
+
+.top__sellers-section .small__block {
+    width: 437px;
+    height: 123px;
+    backdrop-filter: blur(75.8157px);
+    display: flex;
+    align-items: center;
+    padding: 7px 17px 0px 30px;
+    position: relative;
+}
+
+.top__sellers-section .small__block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 28px;
+    border: 3px solid transparent;
+    background: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.top__sellers-section .small__block.last {
+    padding-left: 14px;
+}
+
+.top__sellers-section .small__block.last .number {
+    margin-left: 7px;
+    margin-bottom: 3px;
+}
+
+.top__sellers-section .small__block.last .user__photo {
+    margin-left: 13px;
+}
+
+.top__sellers-section .small__block .user__photo {
+    margin-left: 15px;
+}
+
+.top__sellers-section .small__block .user__info {
+    margin-left: 16px;
+    margin-top: -20px;
+}
+
+.top__sellers-section .small__block .number {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2px;
+}
+
+.top__sellers-section .small__block .user__info h4 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-left: -3px;
+}
+
+.top__sellers-section .small__block .user__info p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 4px;
+    margin-left: 9px;
+    position: relative;
+}
+
+.top__sellers-section .small__block .user__info p::before {
+    position: absolute;
+    content: '';
+    background-image: url('images/Vector_profit.png');
+    width: 9px;
+    height: 14px;
+    background-size: cover;
+    left: -12px;
+}
+
+.top__sellers-section .small__block .user__profit {
+    width: 101px;
+    height: 35px;
+    background: rgba(0, 179, 71, 0.15);
+    border-radius: 17px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #00FF66;
+    padding-top: 10px;
+    position: absolute;
+    top: 51px;
+    right: 20px
+}
+
+.top__sellers-section .small__block .user__profit::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 17px;
+    border: 1px solid transparent;
+    background: linear-gradient(262.58deg, rgba(0, 179, 71, 0.72) -7.49%, rgba(73, 182, 73, 0) 123.89%) border-box;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) padding-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+}
+
+.top__sellers-section .small__block .user__profit.red {
+    background: linear-gradient(180deg, rgba(235, 20, 20, 0.15) 0%, rgba(235, 20, 20, 0.1005) 100%);
+    color: #FF0000;
+}
+
+.top__sellers-section .small__block .user__profit.red::before {
+    background: linear-gradient(262.58deg, rgba(179, 0, 0, 0.72) -7.49%, rgba(182, 73, 73, 0) 123.89%) border-box;
+}
+
+.top__sellers-section .explore__btn {
+    cursor: pointer;
+    text-decoration: none;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 5px 117px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(231px);
+    border: 3px solid;
+    border-image-source: linear-gradient(272.52deg, #FFA6FA 47.49%, #3C79D5 98.81%);
+    border-image-slice: 1;
+    font-family: 'Rajdhani';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 241px;
+    height: 55px;
+    margin-left: 14px;
+    margin-top: 61px;
+    padding-top: 10px;
+}
+
+.whatAreNft__setion {
+    width: 100%;
+    height: 556.37px;
+    background-image: url('images/whatAreNft.png');
+    margin: 158px auto;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+}
+
+.whatAreNft__container {
+    position: relative;
+    width: 1380px;
+}
+
+.whatAreNft__info-block {
+    position: absolute;
+    top: 216px;
+    right: 27px;
+    width: 572px;
+    height: 433px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    box-sizing: content-box;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%);
+    border-image-slice: 1;
+    padding-bottom: 35px;
+}
+
+.whatAreNft__info-block h4 {
+    padding: 58px 0px 0px 70px;
+    font-family: 'Inter800';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44.5093px;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.whatAreNft__info-block p {
+    padding: 22px 30px 0px 70px;
+    font-family: 'Inter400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20.0292px;
+    line-height: 36px;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.whatAreNft__bottom-text {
+    padding: 47px 0px 0px 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.whatAreNft__bottom-text span:last-child {
+    margin-left: 62px;
+    position: relative;
+}
+
+.whatAreNft__bottom-text span:last-child::before {
+    position: absolute;
+    content: "";
+    top: 1px;
+    left: -22px;
+    background-image: url('images/whatAreNft_play-icon.png');
+    width: 12.24px;
+    height: 17.8px;
+}
+
+.subscribe__section {
+    margin-top: 136px;
+    width: 1380px;
+    display: flex;
+}
+
+.subscribe-info-block {
+    padding-left: 76px;
+    padding-top: 31px;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.subscribe-info-block h5 {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.7965px;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.subscribe-info-block p {
+    margin-top: 29px;
+    line-height: 34px;
+    font-family: 'Inter400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0px;
+    font-feature-settings: 'salt'on, 'liga'off;
+}
+
+.subscribe__form {
+    margin-top: 50px;
+    display: flex;
+}
+
+.subscribe-info-block input {
+    width: 274.15px;
+    height: 53.06px;
+    background: #F4F5F7;
+    border-radius: 5.5273px 0px 0px 5.5273px;
+    border-width: 0px;
+    font-family: 'Inter400';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+    padding-left: 18px;
+
+}
+
+.subscribe-info-block input::placeholder {
+    color: black;
+}
+
+.subscribe__button {
+    margin-top: 0px;
+    margin-left: 6px;
+    width: 148px;
+    height: 54px;
+    border-radius: 0px 5.5273px 5.5273px 0px;
+    padding-left: 33px;
+    padding-top: 14px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+}
+
+footer {
+    width: 1434px;
+    margin: 156px auto 41px;
+    padding-right: 95px;
+}
+
+.footer__line {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.2;
+}
+
+.footer__container {
+    margin-top: 53px;
+    display: flex;
+    margin-bottom: 87px;
+}
+
+.footer__logo {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 0px;
+}
+
+.footer__logo h3 {
+    margin-left: 5px;
+}
+
+.footer__container p {
+    margin-top: 30px;
+    width: 282px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+    letter-spacing: 0.1px;
+    font-feature-settings: 'salt'on, 'liga'off;
+    color: #D9DBE1;
+}
+
+.footer__socials {
+    margin-top: 25px;
+    display: flex;
+    gap: 17px;
+}
+
+.footer__container h6 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.8983px;
+    line-height: 31px;
+}
+
+.footer__container ul {
+    list-style: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+}
+
+.footer__new-feature {
+    position: relative;
+}
+
+.footer__new-feature::after {
+    position: absolute;
+    content: '';
+    top: 8px;
+    left: 75px;
+    width: 59px;
+    height: 27px;
+    background-image: url('images/footerNew.png');
+    background-repeat: no-repeat;
+
+}
+
+.footer__container ul li {
+    margin-top: 16px;
+}
+
+.footer__nav-block {
+    margin-left: 90px;
+    margin-top: 44px;
+}
+
+.footer__nav-block-second {
+    margin-left: 88px;
+}
+
+.footer__nav-block-third {
+    margin-left: 97px;
+}
+
+.footer__nav-block-fourth {
+    margin-left: 109px;
+}
+
+.footer__nav-block-fifth {
+    margin-left: 83px;
+}
+
+
+.footer__bottom {
+    margin-top: 25px;
+    margin-left: -2px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.4764px;
+    line-height: 27px;
+    color: #D9DBE1;
+}
+
+.footer__bottom ul li {
+    position: relative;
+}
+
+.footer__bottom ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.footer__bottom ul li:not(:first-child):before {
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 4px;
+    height: 18px;
+    width: 2px;
+    background-color: #D9DBE1;
+}
+
+.swiper-button-next-block,
+.SwiperFirst,
+.SwiperSecond,
+.SwiperThird {
+    display: none;
+}
+
+.accordion__container {
+    display: none;
+    width: 100%;
+}
+
+.accordion {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    width: 100%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.8983px;
+    line-height: 31px;
+    color: white;
+    position: relative;
+}
+
+
+.accordion:after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    right: 23px;
+    width: 15px;
+    height: 8px;
+    background-image: url('images/arrow-accordeon.png');
+    background-size: cover;
+    font-weight: bold;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-out;
+}
+
+.footer__bottom-top {
+    order: 1;
+}
+
+.footer__bottom-bot {
+    order: 2
+}
+
+
+
+@media (max-width:1480px) {
+    .front__section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .footer__nav-block {
+        display: none;
+    }
+
+    .footer__container {
+        margin-bottom: 30px;
+    }
+
+    .accordion__container {
+        display: block;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width:1440px) {
+    header {
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+
+    .header__logo,
+    nav,
+    .header__imgs {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    nav {
+        width: auto;
+    }
+
+    main {
+        margin-top: 50px;
+    }
+
+    .front__wave {
+        display: none;
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 58px;
+    }
+
+    .front__container {
+        width: auto;
+    }
+
+    .statist__block div {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .statist__block p {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .statist__block::before {
+        top: 0px;
+        left: 80px;
+        width: 2px;
+        height: 45px;
+    }
+
+    .statist__block-second-before::before {
+        left: 90px;
+    }
+
+    .front__img-block img {
+        margin-top: 21px;
+        margin-right: 68px;
+        width: 324px;
+        height: 385.4px;
+    }
+
+    .front__left-blur-block {
+        position: absolute;
+        bottom: -19px;
+        left: 0px;
+        width: 324px;
+        height: 174.79px;
+        background-image: url('images/front-nft__mobile.png');
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .front__user-info img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .front__nft-info img {
+        filter: none;
+        padding: 0;
+        margin: 0;
+        width: 11px;
+        height: 18px;
+    }
+
+    .front__left-block {
+        margin-right: 0px;
+    }
+
+    .explore__collections-first-section {
+        margin-top: 150px;
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .subscribe__section {
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 24px;
+    }
+
+    .nfttop__container {
+        display: none;
+    }
+
+    .topnft__section {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .SwiperFirst {
+        display: block;
+        max-width: 1200px;
+    }
+
+    .swiper-button-next-block {
+        display: block;
+    }
+
+    .explore__collections-second-section {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .exp__col-2-container {
+        display: none;
+    }
+
+    .SwiperSecond {
+        display: block;
+        margin-top: 29px;
+        max-width: 1200px;
+    }
+
+    .top__sellers-section .blocks__wrapper,
+    .top__sellers-section .explore__btn {
+        display: none;
+    }
+
+    .SwiperThird {
+        display: block;
+        margin-top: 29px;
+        max-width: 1200px;
+    }
+
+    .top__sellers-section {
+        width: 100%;
+        display: block;
+        padding: 0px 20px;
+    }
+
+    .top__sellers-section .small__block {
+        width: 317px;
+        height: 90px;
+        margin-bottom: 25px;
+        border-width: 2px;
+        padding-left: 22px;
+    }
+
+    .top__sellers-section .small__block .user__photo {
+        width: 51px;
+        height: 51px;
+        margin-left: 12px;
+    }
+
+    .top__sellers-section .small__block .user__photo img {
+        margin-top: -3px;
+        width: 100%;
+    }
+
+    .top__sellers-section .small__block .number {
+        margin-top: -4px;
+        font-size: 13.8072px;
+        line-height: 32px;
+    }
+
+    .top__sellers-section .small__block .user__info {
+        margin-left: 11px;
+        margin-top: -5px;
+    }
+
+    .top__sellers-section .small__block .user__info h4 {
+        font-size: 13.8072px;
+        line-height: 32px;
+    }
+
+    .top__sellers-section .small__block .user__info p {
+        font-size: 9.97186px;
+        line-height: 32px;
+        margin-top: -5px;
+        margin-left: 7px;
+    }
+
+    .top__sellers-section .small__block .user__info p::before {
+        width: 6px;
+        height: 10px;
+        top: 10px;
+        left: -10px;
+    }
+
+    .top__sellers-section .small__block .user__profit {
+        width: 73px;
+        height: 25px;
+        font-size: 10.6564px;
+        line-height: 28px;
+        top: 38px;
+        right: 15px;
+        padding: 0px;
+    }
+
+    .SwiperThird .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:1360px) {
+    .explore__collections-first-section .right__block {
+        display: flex;
+        align-items: center;
+    }
+
+    .explore__collections-first-section .right__block img {
+        display: block;
+        width: 250px;
+        height: 450px;
+        margin-right: 36px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width:1312px) {
+    .subscribe__section {
+        margin-top: 108px;
+        justify-content: center;
+    }
+
+    .subscribe__image {
+        margin-top: 108px;
+        order: 2;
+    }
+
+    .subscribe-info-block {
+        order: 1;
+    }
+}
+
+@media (max-width:1210px) {
+    .front__subtitle {
+        font-size: 20px;
+        line-height: 23px;
+    }
+
+    .binance__logo {
+        width: 200px;
+        height: 40px;
+    }
+
+    .ethereum__logo {
+        width: 130px;
+        height: 40px;
+    }
+
+    .blockchain__logo {
+        width: 220px;
+        height: 40px;
+    }
+
+    .bitmex__logo {
+        width: 120px;
+        height: 16.92px;
+    }
+
+    .front__img-block img {
+        margin-right: 0px;
+    }
+
+    .explore__collections-first-section h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .explore__collections-first-section .small__block {
+        width: 152.52px;
+        height: 40.76px;
+        padding-top: 10px;
+        font-size: 10.9922px;
+        line-height: 14px;
+    }
+
+    .explore__collections-first-section .top,
+    .bot {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .explore__collections-first-section .bot {
+        margin-top: 18px;
+    }
+
+    .explore__collections-first-section .bot .small__block {
+        padding-top: 10px;
+    }
+
+    .explore__collections-first-section .left__block {
+        width: 324px;
+    }
+
+    .explore__collections-first-section .right__block img {
+        width: 185.89px;
+        height: 347.72px;
+    }
+
+    .explore__collections-first-section {
+        justify-content: space-evenly;
+    }
+
+    .explore__collections-first-section {
+        margin-top: 108px;
+    }
+
+    .explore__collections-first-section .view__all span {
+        font-size: 8.24417px;
+        line-height: 10px;
+    }
+
+    .explore__collections-first-section .view__all img {
+        width: 21.53px;
+        height: 6.41px;
+        object-fit: cover;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+    .whatAreNft__setion {
+        margin: 68px auto;
+    }
+
+    .whatAreNft__container {
+        position: relative;
+        width: 100%;
+    }
+
+    .whatAreNft__info-block {
+        top: 416px;
+        right: 27px;
+        width: 335.4px;
+        height: 275px;
+    }
+
+
+    .whatAreNft__info-block h4 {
+        padding: 33px 0px 0px 41px;
+        font-size: 25.87px;
+    }
+
+    .whatAreNft__info-block p {
+        padding: 22px 30px 0px 41px;
+        font-size: 11.6415px;
+        line-height: 21px;
+        font-feature-settings: 'salt'on, 'liga'off;
+    }
+
+
+    .whatAreNft__bottom-text {
+        padding: 51px 0px 0px 41px;
+    }
+
+    .whatAreNft__bottom-text span:last-child {
+        margin-left: 38px;
+        position: relative;
+    }
+
+
+
+}
+
+@media (max-width:1050px) {
+    .nfttob__mini-block {
+        width: 550px;
+    }
+
+    .nfttob__mini-block>img {
+        width: 100%;
+    }
+
+    .topnft__info-block {
+        justify-content: space-between;
+        padding-right: 42px;
+    }
+}
+
+@media (max-width:975px) {
+
+    .exp__col-2-first-block,
+    .exp__col-2-second-block,
+    .exp__col-2-third-block {
+        width: 299px;
+        border-width: 2px;
+        position: relative;
+        padding-bottom: 24px;
+    }
+
+    .exp__col-2-first-block img,
+    .exp__col-2-second-block img,
+    .exp__col-2-third-block img {
+        height: 142px;
+    }
+
+    .exp__col-2-first-block::before,
+    .exp__col-2-second-block::before,
+    .exp__col-2-third-block::before {
+        width: 112.5px;
+        height: 112.5px;
+        background-size: cover;
+        top: 130px;
+    }
+
+    .exp__col-2-first-block h4,
+    .exp__col-2-second-block h4,
+    .exp__col-2-third-block h4 {
+        font-size: 16.8391px;
+        line-height: 32px;
+        margin-top: 52px;
+    }
+
+    .exp__col-2-block-url {
+        font-weight: 400;
+        font-size: 13.9587px;
+        line-height: 32px;
+    }
+
+    .exp__col-2-block-url::before {
+        width: 12px;
+        height: 12px;
+        left: 187px;
+        top: 9px;
+    }
+
+    .exp__col-2-block-stats {
+        padding-top: 5px;
+        padding-left: 29px;
+        padding-right: 30px;
+    }
+
+    .exp__col-2-block-stats-text span {
+        font-size: 21.9417px;
+        line-height: 44px;
+        padding-left: 12px;
+    }
+
+    .exp__col-2-block-stats-text p {
+        font-size: 13.7136px;
+        line-height: 44px;
+        margin-top: -22px;
+    }
+
+    .exp__col-2-block-button {
+        margin-left: 70px;
+        width: 167px;
+        border-width: 2px;
+        height: 39px;
+        margin-top: 16px;
+        font-size: 13.7774px;
+        line-height: 18px;
+        padding-top: 7px;
+    }
+
+}
+
+@media (max-width:900px) {
+    header {
+        padding-top: 25px;
+        position: relative;
+    }
+
+    .header__imgs,
+    nav {
+        display: none;
+    }
+
+    .header__logo {
+        margin: 0px;
+        z-index: 1000;
+    }
+
+    .header__menu-mobile-btn {
+        display: block;
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    .front__section {
+        z-index: -1;
+    }
+
+    .header__menu-mobile {
+        display: block;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        left: -100%;
+        transition: all .65s;
+        text-align: center;
+        padding: 100px 0;
+        width: 100%;
+        background-image: url('images/body_bg.png');
+    }
+
+    .header__menu-mobile-opened {
+        left: 0px;
+    }
+
+    .header__menu-mobile h4 {
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 26.531px;
+        line-height: 44px;
+        color: #FFFFFF;
+    }
+
+    .topnft__info-block h5 {
+        font-size: 21px;
+    }
+
+    .nfttob__mini-block {
+        width: 450px;
+    }
+}
+
+@media (max-width:867px) {
+    .front__container {
+        order: 0;
+    }
+
+    .front__left-block {
+        order: 2;
+    }
+
+    .front__bottom-block {
+        margin-top: 50px;
+        order: 1;
+    }
+
+    .front__section {
+        justify-content: center;
+    }
+
+    .front__bottom-block {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .front__bottom-block img {
+        margin: 10px;
+    }
+
+    .explore__collections-first-section {
+        flex-wrap: wrap;
+    }
+
+    .subscribe__image img {
+        width: 326px;
+        height: 380px;
+    }
+
+    .subscribe-info-block h5 {
+        font-size: 26.2703px;
+    }
+
+    .subscribe-info-block p {
+        margin-top: 19px;
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.1px;
+    }
+
+    .subscribe-info-block input {
+        width: 180.97px;
+        height: 35.03px;
+        font-size: 10.2162px;
+        line-height: 19px;
+        padding-left: 12px;
+        letter-spacing: 0px;
+        border-radius: 3.64865px 0px 0px 3.64865px;
+        padding-bottom: 4px;
+    }
+
+    .subscribe__button {
+        margin-top: 0px;
+        margin-left: 6px;
+        width: 96px;
+        height: 35px;
+        font-size: 10.2162px;
+        line-height: 12px;
+        padding-left: 21px;
+        padding-top: 8px;
+        letter-spacing: 1px;
+    }
+
+    .subscribe-info-block {
+        padding-left: 0px;
+        padding-top: 0px;
+    }
+
+    .subscribe__section {
+        margin-top: 113px;
+    }
+
+    .subscribe__form {
+        margin-top: 33px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .topnft__section {
+        padding-right: 0px;
+        padding-left: 25px;
+        margin-top: 209px;
+    }
+
+    .SwiperFirst {
+        margin-right: 0px;
+        margin-top: -10px;
+    }
+
+    .nfttob__mini-block {
+        width: 400px;
+    }
+
+    .nfttob__mini-block h5 {
+        font-size: 18px;
+    }
+
+    .topnft__info-right-block {
+        margin-left: 0px;
+    }
+
+    .topnft__titles {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .explore__collections-second-titles {
+        font-size: 18.0606px;
+        line-height: 23px;
+        padding-right: 11px;
+    }
+
+
+    .topnft__titles p:last-child span,
+    .explore__collections-second-section p:last-child span {
+        display: none;
+    }
+
+    .topnft__titles p:last-child span::before,
+    .explore__collections-second-section p:last-child span::before {
+        content: none;
+    }
+
+    .top__sellers-section>p {
+        width: 340px;
+    }
+
+    .footer__container {
+        flex-wrap: wrap;
+    }
+
+    .accordion__container {
+        display: block;
+        margin-left: 0px;
+    }
+
+    .accordion__container button {
+        padding-left: 0px;
+    }
+
+    .footer__bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:640px) {
+    .nfttob__mini-block {
+        width: 304px;
+    }
+
+    .topnft__info-block {
+        padding-right: 25px;
+    }
+
+    .topnft__info-block {
+        height: 159px;
+        box-sizing: content-box;
+        border-width: 1.7px;
+    }
+
+    .nfttob__mini-block h5 {
+        font-size: 14px;
+        padding: 26px 0px 0px;
+        line-height: 27px;
+        padding-left: 20px;
+        width: 145px;
+    }
+
+    .topnft__user-img {
+        width: 26px;
+        height: 26px;
+        margin-left: 21px;
+        margin-top: 2px;
+    }
+
+    .topnft__done-img {
+        width: 11px;
+        height: 12px;
+        margin-top: 5px;
+        margin-left: 14px;
+    }
+
+
+    .topnft__user-info p {
+        font-size: 12px;
+        line-height: 27px;
+        margin-top: 3px;
+        margin-left: 3px;
+    }
+
+    .topnft__info-block h6 {
+        font-size: 9px;
+        line-height: 27px;
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+
+    .topnft__eth-info {
+        margin-top: 0px;
+        margin-left: 17px;
+    }
+
+    .topnft__eth-info img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .topnft__eth-info span {
+        font-size: 7px;
+        width: 43px;
+        margin-top: 2px;
+    }
+
+    .topnft__eth-info p {
+        font-size: 9px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    .topnft__info-right-block {
+        width: 110px;
+    }
+
+    .topnft__info-right-block p {
+        font-size: 9px;
+    }
+
+    .topnft__info-button {
+        margin-top: 20px;
+        width: 111px;
+        height: 38px;
+        font-weight: 600;
+        font-size: 13.6006px;
+        line-height: 17px;
+        margin-left: 9px;
+        padding-left: 9px;
+        padding-top: 7px;
+    }
+
+    .topnft__info-button img {
+        margin-left: 9px;
+        width: 21px;
+        height: 8px;
+    }
+
+    .topnft__info-right-block span {
+        font-size: 13px;
+    }
+
+    .topnft__info-right-block>p {
+        margin-left: 16px;
+        margin-top: 33px;
+    }
+
+    .topnft__info-mini-block p,
+    .topnft__info-mini-block-second p,
+    .topnft__info-mini-block-third p {
+        margin-left: 15px;
+        margin-top: 3px;
+    }
+
+    .topnft__info-mini-block span,
+    .topnft__info-mini-block-second span,
+    .topnft__info-mini-block-third span {
+        margin-left: 17px;
+        margin-top: 8px;
+    }
+
+
+    .topnft__info-mini-block-second span {
+        margin-left: 21px;
+    }
+
+    .topnft__info-mini-block-second p {
+        margin-left: 20px;
+    }
+
+    .topnft__info-mini-block-third span {
+        margin-left: 22px;
+    }
+
+    .topnft__info-mini-block-third p {
+        margin-bottom: 6px;
+        margin-left: 23px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    body {
+        background-image: url('images/background-mobile.png');
+    }
+
+    header {
+        padding-top: 18px;
+        padding-right: 27px;
+        padding-left: 23px;
+    }
+
+    .header__logo img {
+        width: 14px;
+        height: 23px;
+        margin-right: 5px;
+    }
+
+    .header__logo h3 {
+        font-size: 16px;
+    }
+
+    .header__menu-mobile-btn {
+        margin-top: 8px;
+    }
+
+    h1 {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 58px;
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+
+    .br-desktop {
+        display: none;
+    }
+
+    .br-mobile {
+        display: block;
+    }
+
+    main {
+        margin-top: 31px;
+        letter-spacing: 0px;
+    }
+
+    .front__subtitle {
+        font-size: 14px;
+        line-height: 23px;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 28px;
+    }
+
+    .front__button {
+        margin-top: 15px;
+        margin-left: 4px;
+        position: relative;
+    }
+
+
+    .front__button-text {
+        top: 7px;
+        left: 31px;
+        font-size: 12px;
+    }
+
+    .front__button-text img {
+        margin-left: 5px;
+        width: 27.72px;
+        height: 8.26px;
+    }
+
+    .front__button-conteiner-mobile {
+        visibility: visible;
+        height: auto;
+        flex-wrap: wrap;
+        margin-top: 15px;
+        margin-left: 23px;
+        position: relative;
+    }
+
+    .front__button-conteiner-desktop {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .front__section-gradient-text-mobile {
+        position: absolute;
+        font-size: 12px;
+        line-height: 15px;
+        top: -34px;
+        left: 167px;
+    }
+
+    .statist__block {
+        margin-top: -75px;
+        margin-left: 30px;
+    }
+
+    .statist__block div {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .statist__block p {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        letter-spacing: 0.117972px;
+        font-weight: 400;
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .statist__block::before {
+        content: none;
+    }
+
+    .statist__block-second-before {
+        margin-left: 66px;
+    }
+
+    .statist__block-third-before {
+        margin-left: 65px;
+    }
+
+    .binance__logo {
+        width: 143.08px;
+        height: 28.62px;
+    }
+
+    .ethereum__logo {
+        width: 91.81px;
+        height: 28.62px;
+    }
+
+    .blockchain__logo {
+        width: 188.38px;
+        height: 28.62px;
+    }
+
+    .bitmex__logo {
+        width: 105.91px;
+        height: 16.92px;
+    }
+
+    .front__bottom-block {
+        margin-top: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+    }
+
+    .binance__logo-block {
+        margin-top: -1px;
+    }
+
+    .ethereum__logo-block {
+        margin-left: 38px;
+    }
+
+    .blockchain__logo-block {
+        margin-top: 6px;
+        margin-left: -8px;
+    }
+
+    .bitmex__logo-block {
+        margin-top: 8px;
+        margin-left: 4px;
+    }
+
+    .front__left-block {
+        margin-top: 25px;
+    }
+
+    .front__left-blur-block {
+        position: absolute;
+        bottom: -121px;
+    }
+
+    .front__blur-left {
+        padding-top: 27px;
+        padding-left: 23px;
+        letter-spacing: -0.1px;
+    }
+
+    .front__user-info {
+        margin-top: -3px;
+    }
+
+    .front__blur-res-price-text {
+        margin-top: 6px;
+    }
+
+    .front__blur-right {
+        width: 127px;
+        margin-top: 36px;
+        padding-left: 5px;
+    }
+
+    .front__blur-right a {
+        margin-top: 26px;
+        margin-left: -17px;
+    }
+
+    .explore__collections-first-section {
+        margin-top: 62px;
+    }
+
+    .explore__collections-first-section {
+        padding: 0 20px;
+    }
+
+    .explore__collections-first-section .blocks__wrapper {
+        margin-top: 19px;
+    }
+
+    .explore__collections-first-section .small__block {
+        padding-top: 13px;
+        height: 41.75px;
+        border: 1px solid;
+        border-image: linear-gradient(272.52deg, rgba(255, 166, 250, 0.3) 47.49%, rgba(60, 121, 213, 0.3) 98.81%);
+        border-image-slice: 2;
+    }
+
+    .explore__collections-first-section .view__all {
+        margin-top: 17px;
+    }
+
+    .explore__collections-first-section .view__all img {
+        margin-left: 7px;
+        margin-right: 0px;
+    }
+
+    .explore__collections-first-section h3 {
+        margin-top: 5px;
+    }
+
+    .explore__collections-first-section .right__block img {
+        margin: 5px 0px 0px 4px;
+
+    }
+
+    .whatAreNft__info-block {
+        top: 123px;
+        right: 22px;
+        width: 330px;
+        height: 234px;
+    }
+
+    .whatAreNft__info-block h4 {
+        padding: 33px 0px 0px 41px;
+        font-size: 25.87px;
+    }
+
+    .whatAreNft__info-block p {
+        padding: 13px 30px 0px 40px;
+        font-size: 11.6415px;
+        line-height: 20.8px;
+    }
+
+    .whatAreNft__bottom-text span:last-child::before {
+        top: 1px;
+        left: -12px;
+        background-size: cover;
+        width: 7.11px;
+        height: 10.35px;
+    }
+
+    .whatAreNft__bottom-text {
+        padding: 27px 0px 0px 40px;
+        font-size: 10px;
+        letter-spacing: 0.2px;
+    }
+
+    .whatAreNft__bottom-text span:last-child {
+        margin-left: 36px;
+        position: relative;
+    }
+
+    .whatAreNft__setion {
+        width: 100%;
+        height: 300px;
+        background-image: url('images/whatAreNft-mobile.png');
+    }
+
+    .explore__collections-second-section {
+        margin-top: 111px;
+        padding-right: 0px;
+        padding-left: 25px;
+    }
+
+    .exp__col-2-first-block::before,
+    .exp__col-2-second-block::before,
+    .exp__col-2-third-block::before {
+        top: 125px;
+    }
+
+    .exp__col-2-first-block h4,
+    .exp__col-2-second-block h4,
+    .exp__col-2-third-block h4 {
+        margin-top: 39px;
+    }
+
+    .exp__col-2-block-url {
+        margin-top: -10px;
+    }
+
+    .exp__col-2-block-button {
+        margin-top: 13px;
+    }
+
+    footer {
+        margin-top: 55px;
+        padding: 25px;
+    }
+
+    .footer__container {
+        margin-top: 0px;
+    }
+
+    .footer__logo {
+        margin-top: 26px;
+    }
+
+    .footer__container p {
+        margin-top: 31px;
+        width: 324px;
+        font-family: 'Inter400';
+        line-height: 27px;
+        letter-spacing: 0px;
+    }
+
+    .accordion__container {
+        margin-top: 29px;
+        margin-left: 2px;
+    }
+
+    .accordion__container button {
+        font-family: 'Inter400';
+        font-feature-settings: 'salt'on, 'liga'off;
+    }
+
+    .footer__line-mobile {
+        display: none;
+    }
+
+    .footer__bottom-top {
+        margin-top: 37px;
+        letter-spacing: 0.05px;
+        order: 2;
+    }
+
+    .footer__bottom-bot {
+        order: 1;
+    }
+
+    .footer__bottom ul li:not(:first-child):before {
+        content: none;
+    }
+
+    .footer__bottom-bot ul {
+        margin-left: 5px;
+    }
+
+    .footer__bottom-bot-second-li {
+        margin-left: 8px;
+    }
+
+    .footer__bottom-bot li {
+        margin-top: -9px;
+    }
+
+    .footer__bottom {
+        justify-content: space-between;
+        margin-left: 11px;
+    }
+
+    .top__sellers-section {
+        margin-top: 64px;
+    }
+
+    .top__sellers-section h3 {
+        font-size: 19.2314px;
+        margin-left: -14px;
+    }
+
+    .top__sellers-section .after__custom::after {
+        width: 9px;
+        height: 5px;
+        right: -16px;
+        top: 12px;
+    }
+
+    .top__sellers-section>p {
+        width: 325px;
+        line-height: 20px;
+        text-align: center;
+        margin: 13px auto 0;
+        padding-left: 0px;
+        padding-right: 2px;
+        font-size: 14px;
+    }
+
+    .SwiperThird {
+        margin-top: 25px;
+    }
+
+    .top__sellers-section .small__block::before {
+        border-radius: 20px;
+    }
+
+    .swiper-button-third {
+        margin-top: 5px;
+        margin-left: 21px;
+        padding-left: 16px;
+    }
+}
