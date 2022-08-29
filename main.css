@@ -1241,6 +1241,7 @@ h1 span {
     height: 433px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
     box-sizing: content-box;
     border-width: 3px;
     border-style: solid;
