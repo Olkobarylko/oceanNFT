@@ -1067,24 +1067,10 @@ h1 span {
     align-items: center;
     padding: 7px 17px 0px 30px;
     position: relative;
+    background-image: url('../oceanNFT/images/top_sellers-border.png');
+    background-size: cover;
 }
 
-.top__sellers-section .small__block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 28px;
-    border: 3px solid rgba(255, 255, 255, 0);
-    background: -webkit-linear-gradient(145.77deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 105.76%) border-box;
-    -webkit-mask:
-    -webkit-linear-gradient(#fff 0 0) padding-box,
-    -webkit-linear-gradient(#fff 0 0);
-    -webkit-mask-composite: destination-out;
-    -webkit-mask-composite: exclude;
-}
 
 .top__sellers-section .small__block.last {
     padding-left: 14px;
