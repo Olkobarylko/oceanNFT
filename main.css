@@ -1218,8 +1218,8 @@ h1 span {
     width: 572px;
     height: 433px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(30px) contrast(60%);
-    -webkit-backdrop-filter: blur(30px) contrast(60%);
+    backdrop-filter: blur(30px) contrast(80%);
+    -webkit-backdrop-filter: blur(30px) contrast(80%);
     box-sizing: content-box;
     border-width: 3px;
     border-style: solid;
