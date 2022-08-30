@@ -1153,6 +1153,7 @@ h1 span {
     top: 51px;
     right: 20px
 }
+
 .top__sellers-section .small__block .user__profit {
     background-image: url('../oceanNFT/images/top-sellers-green.png');
     background-size: cover;
@@ -2076,7 +2077,7 @@ footer {
     }
 
     .header__menu-mobile-opened {
-        left: 0px;
+        transform: translate3d(100%, 0px, 0px);
     }
 
     .header__menu-mobile h4 {
